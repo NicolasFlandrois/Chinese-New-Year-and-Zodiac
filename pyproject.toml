@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ChineseNewYear_Zodiac"
+version = "1.0.0"
+authors = [{name="Nicolas Flandrois", email="nicolas.dev@flandrois.com"},]
+maintainers = [{name="Nicolas Flandrois", email="nicolas.dev@flandrois.com"},]
+description = "A simple Python package to find Chinese New Year and Chinese Zodiac"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "astral",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/NicolasFlandrois/Chinese-New-Year-and-Zodiac"
+"GitHub" = "https://github.com/NicolasFlandrois/Chinese-New-Year-and-Zodiac"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
