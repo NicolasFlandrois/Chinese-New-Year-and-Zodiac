@@ -1,42 +1,23 @@
 name: Linter
 
-on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - main
-      - develop
-  pull_request_target:
-    branches:
-      - main
-      - develop
+on: [push, pull_request, pull_request_target]
 
 jobs:
-  run-linters:
-    name: Run linters
+  build:
     runs-on: ubuntu-latest
-    continue_on_error: false
-
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
     steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.8
-
-      - name: Install Python dependencies
-        # run: pip install black flake8
-        run: pip install flake8
-
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          # black: true
-          flake8: true
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8
+    - name: Analysing the code with pylint
+      run: |
+        flake8 $(git ls-files '*.py')
