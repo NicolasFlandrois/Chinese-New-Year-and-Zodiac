@@ -6,7 +6,7 @@
 
 **Licence**: MIT License - Copyright (c) 2023 - Nicolas Flandrois
 
-![](https://img.shields.io/badge/Python-%3E%3D3.7-blue.svg) ![](https://img.shields.io/badge/dependencies-astral%20%3E%3D%203.2-informational.svg) ![GitHub](https://img.shields.io/github/license/NicolasFlandrois/Chinese-New-Year-and-Zodiac) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/NicolasFlandrois/Chinese-New-Year-and-Zodiac?style=flat)
+![](https://img.shields.io/badge/Python-%3E%3D3.8-blue.svg) ![](https://img.shields.io/badge/dependencies-astral%20%3E%3D%203.2-informational.svg) ![GitHub](https://img.shields.io/github/license/NicolasFlandrois/Chinese-New-Year-and-Zodiac) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/NicolasFlandrois/Chinese-New-Year-and-Zodiac?style=flat)
 
 ----
 ## DESCRIPTION:
