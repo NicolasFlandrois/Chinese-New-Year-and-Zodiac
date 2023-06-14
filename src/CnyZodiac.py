@@ -23,8 +23,10 @@ class ChineseNewYearZodiac:
                 'Singe', 'Coq', 'Chien', 'Cochon', 'Rat', 'Boeuf', 'Tigre',
                 'Lapin', 'Dragon', 'Serpent', 'Cheval', 'Chèvre'
             ],  # French
-            'cn': ['猴', '鸡', '狗', '猪', '鼠', '牛', '虎', '兔', '龙', '蛇',
-            '马', '羊'],  # Chinese Simplified (mainland mandarin)
+            'cn': [
+                '猴', '鸡', '狗', '猪', '鼠', '牛', '虎', '兔', '龙', '蛇',
+                '马', '羊'
+            ],  # Chinese Simplified (mainland mandarin)
         }
         self.lang = lang
 
