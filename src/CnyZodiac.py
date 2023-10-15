@@ -122,9 +122,9 @@ class ChineseNewYearZodiac:
         Takes into account if the date is before or after
         Chinese New Year's day.
         """
-        if date.date() < self.chinese_new_year(date.year):
-            return self.zodiac(date.year - 1)
-        return self.zodiac(date.year)
+        return self.zodiac(date.year - 1
+                           if date.date() < self.chinese_new_year(date.year)
+                           else date.year)
 
     def zodiac_now(self) -> str:
         """
