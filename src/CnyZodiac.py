@@ -39,8 +39,8 @@ class ChineseNewYearZodiac:
 
     def chinese_new_year(self, year: int) -> date:
         """
-        The chinese_new_year() method, givena year (Integer), will return the
-        Chinese New Year's date, faor that same year.
+        The chinese_new_year() method, given a year (Integer), will return the
+        Chinese New Year's date, for that same year.
 
         ---
         source: https://en.wikipedia.org/wiki/Chinese_calendar
@@ -80,7 +80,7 @@ class ChineseNewYearZodiac:
         There is the theory (above), and lots of exceptions (cf code).
         So far I don't understand the logic, nor see a pattern.
         How to compute the special cases and leap months?
-        How to make it a full proof mathematical algorythm,
+        How to make it a full proof mathematical algorithm,
         so it works whatever the year?
         """
         cny_range = [
@@ -137,7 +137,7 @@ class ChineseNewYearZodiac:
     def chinese_new_year_zodiac_full_details_date(self,
                                                   date: datetime) -> dict:
         """
-        Given a date, this method will return detailed informations about that
+        Given a date, this method will return detailed information about that
         year's Chinese New Year and Zodiac sign.
         """
         return {
@@ -149,14 +149,14 @@ class ChineseNewYearZodiac:
 
     def chinese_new_year_zodiac_full_details_now(self) -> dict:
         """
-        This method will return detailed informations about
+        This method will return detailed information about
         Chinese New Year and Zodiac sign, for the current date & year.
         """
         return self.chinese_new_year_zodiac_full_details_date(datetime.now())
 
     def chinese_new_year_zodiac_when_next_year(self) -> dict:
         """
-        This method will return detailed informations about
+        This method will return detailed information about
         Chinese New Year and Zodiac sign, for the current date's next year.
         """
         now = datetime.now()
