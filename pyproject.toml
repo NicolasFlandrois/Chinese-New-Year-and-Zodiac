@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ChineseNewYear_Zodiac"
-version = "1.0.0"
+version = "1.0.1"
 authors = [{name="Nicolas Flandrois", email="nicolas.dev@flandrois.com"},]
 maintainers = [{name="Nicolas Flandrois", email="nicolas.dev@flandrois.com"},]
 description = "A simple Python package to find Chinese New Year and Chinese Zodiac"
