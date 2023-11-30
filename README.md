@@ -73,7 +73,7 @@ cnyz_now = my_cnyz.chinese_new_year_zodiac_full_details_now()
 # }
 
 # Get detailed information for next (comming) year, based on datetime.now() automatically
-cnyz_now = my_cnyz.chinese_new_year_zodiac_full_details_now()
+cnyz_now = my_cnyz.chinese_new_year_zodiac_when_next_year()
 # output (if current datetime is 2023-07-04):
 # {
 #     'Chinese New Year': date(2024, 2, 10),
@@ -84,5 +84,4 @@ cnyz_now = my_cnyz.chinese_new_year_zodiac_full_details_now()
 
 ---
 ### TODO (Work In Progress, still in development)
-- [ ] Add Simplified Chinese in multi lang.
 - [ ] Optimize code AND find a mathematical full proof way to conteract leap months, so this package can work for ANY given year/date (past of future).
