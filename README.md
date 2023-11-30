@@ -15,7 +15,7 @@ Chinese-New-Year-and-Zodiac package aim to automate finding Chinese New Year's d
 This package is set to be multi languages:
 - 'en' - English (default)
 - 'fr' - French
-- 'cn' - Chinese (simplified chinese, mainland china, mandarin) *work in progress*
+- 'cn' - Chinese (simplified chinese, mainland china, mandarin)
 
 ## Install
 
@@ -33,7 +33,7 @@ my_cnyz = cnyz()
 # Change Language
 en_cnyz = cnyz(lang='en')  # English
 fr_cnyz = cnyz(lang='fr')  # French
-cn_cnyz = cnyz(lang='cn')  # Simplified Chinese Mandarin  (Work In Progress)
+cn_cnyz = cnyz(lang='cn')  # Simplified Chinese Mandarin
 
 
 # Chinese Zodiac for a given Year
